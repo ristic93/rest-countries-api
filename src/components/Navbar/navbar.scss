@@ -1,0 +1,10 @@
+nav {
+    background-color: var(--details-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 4rem;
+    box-shadow: var(--box-shadow);
+    a {
+        color: var(--text-color);
+    }
+}

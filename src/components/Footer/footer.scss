@@ -1,0 +1,10 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: var(--details-color);
+    box-shadow: var(--box-shadow);
+    p {
+        font-weight: 800;
+    }
+}
