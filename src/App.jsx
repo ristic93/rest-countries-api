@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
-import Countries from "./components/Countries/Countries";
+import Countries from "./pages/Countries/Countries";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
-import SingleCountry from "./components/SingleCountry/SingleCountry";
+import SingleCountry from "./pages/SingleCountry/SingleCountry";
 import { CountriesProvider } from "./context/CountriesContext";
 import { ThemeContext } from "./context/ThemeContext";
 
@@ -16,8 +16,8 @@ const App = () => {
         <Navbar />
 
         <Routes>
-          <Route exact path="/:name" element={<SingleCountry />} />
           <Route path="/" exact element={<Countries />} />
+          <Route path="/:name" element={<SingleCountry />} />
         </Routes>
 
         <Footer />
