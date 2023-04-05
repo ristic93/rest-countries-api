@@ -18,4 +18,5 @@ Users should be able to:
 * Click through to the border countries on the detail page
 * Toggle the color scheme between light and dark mode *(optional)*
 
-![desktop-preview](https://user-images.githubusercontent.com/110178135/230192877-5dfc6daa-c8c9-42b9-bbc4-c85b9f133146.jpg)
+![desktop-preview](https://user-images.githubusercontent.com/110178135/230194558-57cc99f6-ae67-4a7f-bbd4-704abc18e0a5.jpg)
+
