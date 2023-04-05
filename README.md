@@ -1,19 +1,21 @@
 # Frontend Mentor - Rest Countries Api
 
-## [Live Preview](https://rest-countries-api-v1.netlify.app/)
+# [Live Preview](https://ecommerce-landing-page16210.netlify.app/)
 
 ## Technologies used:
 
 - `React.js` & `Sass` for frontend
 - `Vite.js` as module bundler
 
-This is a solution to the [Rest Countries Api](https://www.frontendmentor.io/solutions/ecommerce-product-page--kFzV5vbp4) challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Rest Countries Api](https://www.frontendmentor.io/solutions/rest-countries-api-Ta7eGVdw9N) challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 Users should be able to:
 
-* View the optimal layout for the site depending on their device's screen size
-* See hover states for all interactive elements on the page
-* Open a lightbox gallery by clicking on the large product image
-* Switch the large product image by clicking on the small thumbnail images
-* Add items to the cart
-* View the cart and remove items from it
+* See all countries from the API on the homepage
+* Search for a country using an `input` field
+* Filter countries by region
+* Click on a country to see more detailed information on a separate page
+* Click through to the border countries on the detail page
+* Toggle the color scheme between light and dark mode *(optional)*
+
+![desktop-preview](https://user-images.githubusercontent.com/110178135/230192877-5dfc6daa-c8c9-42b9-bbc4-c85b9f133146.jpg)
