@@ -1,0 +1,13 @@
+div {
+  select {
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    background-color: var(--details-color);
+    padding: 10px;
+    outline: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    width: 250px;
+  }
+}

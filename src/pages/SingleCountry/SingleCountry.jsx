@@ -10,13 +10,12 @@ const SingleCountry = () => {
   const { name } = useParams();
 
   useEffect(() => {
-    window.scroll(0, 0)
+    window.scroll(0, 0);
     const fetchCountryData = async (name) => {
       try {
         const response = await fetch(`${API_URL}/name/${name}`);
         const data = await response.json();
         setCountry(data);
-        console.log(data);
         setIsLoading(false);
       } catch (err) {
         console.log(err);
@@ -26,8 +25,9 @@ const SingleCountry = () => {
     fetchCountryData(name);
   }, [name]);
 
+
   return (
-    <main>
+    <>
       {isLoading ? (
         <h2>Loading...</h2>
       ) : (
@@ -67,9 +67,11 @@ const SingleCountry = () => {
                       <li>
                         <span>Top Level Domain:</span> {item.topLevelDomain}
                       </li>
-                      <li>
-                        <span>Currencies:</span> {item.currencies[0].name}
-                      </li>
+                      {item.currencies ? (
+                        <li>
+                          <span>Currencies:</span> {item.currencies[0].name}
+                        </li>
+                      ) : null}
                       <li>
                         <span>Languages:</span> {item.languages[0].name}
                       </li>
@@ -81,7 +83,7 @@ const SingleCountry = () => {
                     {item.borders?.length ? (
                       item.borders.map((country, index) => (
                         <Link key={index} to={`/${name}`}>
-                          {country} 
+                          {country}
                         </Link>
                       ))
                     ) : (
@@ -94,7 +96,7 @@ const SingleCountry = () => {
           })}
         </section>
       )}
-    </main>
+    </>
   );
 };
 

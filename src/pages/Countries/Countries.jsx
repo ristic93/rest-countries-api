@@ -5,22 +5,18 @@ import "./countries.scss";
 
 const Countries = () => {
   const { countries, isLoading } = useContext(CountriesContext);
+  const noCountries = countries.status || countries.message;
 
   return (
     <>
-      <div className="country-wrapper container">
+      <div className="country-wrapper">
         {isLoading ? (
-          <div className="loading">
-            <h2>Loading...</h2>
-          </div>
-        ) : (
+          <h2>Loading...</h2>
+        ) : !noCountries ? (
           countries.map(
             ({ numericCode, name, flags, population, region, capital }) => {
               return (
-                <Link
-                  to={`/${name}`}
-                  key={numericCode}
-                >
+                <Link to={`/${name}`} key={numericCode}>
                   <div className="country-info">
                     <div className="image">
                       <img src={flags.png} alt={name} />
@@ -44,6 +40,8 @@ const Countries = () => {
               );
             }
           )
+        ) : (
+          <h2>No countries found...</h2>
         )}
       </div>
     </>

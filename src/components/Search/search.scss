@@ -1,0 +1,23 @@
+.input {
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  background-color: var(--details-color);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  .icon {
+    font-size: 1.5em;
+  }
+  input {
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    background-color: transparent;
+  }
+  input::placeholder {
+    color: var(--text-color);
+  }
+}

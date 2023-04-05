@@ -1,0 +1,13 @@
+.cta {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 570px) {
+  .cta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
